@@ -29,7 +29,7 @@ const Historico = () => {
   const fetchData = useCallback(async () => {
     try {
       const response = await axios.get<Cliente[]>(
-        "http://localhost:3001/v1/client"
+        `${import.meta.env.VITE_CLIENT}`
       );
       setClientes(response.data);
     } catch (error) {

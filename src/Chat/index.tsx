@@ -94,7 +94,7 @@ const ChatBot: React.FC = () => {
       financiamento,
       troca,
     };
-    axios.post("http://localhost:3001/v1/client", userData);
+    axios.post(`${import.meta.env.VITE_CLIENT}`, userData);
   };
 
   const handleOptionClick = (option: string) => {
