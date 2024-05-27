@@ -6,7 +6,6 @@ import { Table, TableBody, TableRow } from "@mui/material";
 import * as C from "./style";
 import { HeaderControle } from "../../components/HeaderControle";
 import Robo from "../../assets/RobLail.svg";
-import CloseIcon from "@mui/icons-material/Close";
 import CheckIcon from "@mui/icons-material/Check";
 import EditIcon from "@mui/icons-material/Edit";
 import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";

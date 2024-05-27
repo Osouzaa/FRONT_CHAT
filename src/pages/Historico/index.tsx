@@ -1,5 +1,5 @@
-import SaveAltIcon from "@mui/icons-material/SaveAlt";
-import { Table, TableBody, TableRow, TableCell } from "@mui/material";
+
+import { Table, TableBody, TableRow } from "@mui/material";
 import * as C from "./style";
 import { HeaderControle } from "../../components/HeaderControle";
 import Robo from "../../assets/RobLail.svg";
