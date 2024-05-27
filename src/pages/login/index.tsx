@@ -2,11 +2,13 @@ import { useState } from "react";
 import Robo from "../../assets/RobLail.svg";
 import * as C from "./style";
 import { Header } from "../../components/Header";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [newLogin, setNewLogin] = useState({ usuario: "", senha: "" });
   const [feedback, setFeedback] = useState("");
   const [classFeed, setClassFeed] = useState("");
+  const navigate = useNavigate();
 
   const handleInputChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
@@ -28,10 +30,12 @@ const Login = () => {
       return;
     }
     setFeedback(`Seja bem vindo ${newLogin.usuario}`);
+
     setClassFeed("Great");
     setTimeout(() => {
       setFeedback("");
       setClassFeed("");
+      navigate("/relatorio");
     }, 2000);
   };
 
