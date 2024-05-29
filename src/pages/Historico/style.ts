@@ -23,6 +23,9 @@ export const ImageRobo = styled.img`
     @media (max-width: 1350px) {
       width: 250px;
     }
+    @media (max-width: 550px) {
+      width: 100px;
+    }
   }
 
   &.right {
@@ -31,6 +34,9 @@ export const ImageRobo = styled.img`
 
     @media (max-width: 1350px) {
       width: 250px;
+    }
+    @media (max-width: 550px) {
+      width: 100px;
     }
   }
 `;
@@ -41,6 +47,13 @@ export const ContentTable = styled.div`
 
   @media screen and (max-width: 1350px) {
     width: 70%;
+  }
+
+  @media (max-width: 550px) {
+    margin: 0;
+    width: 100%;
+    height: 320px;
+    overflow: auto;
   }
 `;
 
@@ -61,6 +74,10 @@ export const StyleItem = styled(TableCell)`
   }
   &:nth-child(4) {
     border-radius: 0 10px 10px 0px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 13px !important;
   }
 `;
 
@@ -84,5 +101,13 @@ export const LinhaStyle = styled(TableCell)`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+
+    @media (max-width: 550px) {
+      font-size: 12px !important;
+    }
+  }
+
+  @media (max-width: 550px) {
+    font-size: 13px !important;
   }
 `;

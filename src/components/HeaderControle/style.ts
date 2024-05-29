@@ -15,6 +15,10 @@ export const Header = styled.header`
 
   > img {
     width: 8rem;
+
+    @media (max-width: 550px) {
+      width: 4rem;
+    }
   }
 `;
 
@@ -32,6 +36,13 @@ export const ContentList = styled.div`
     font-weight: 300;
     line-height: normal;
     cursor: pointer;
+  }
+
+  @media (max-width: 550px) {
+    gap: 3rem;
+    li {
+      font-size: 1rem;
+    }
   }
 `;
 
