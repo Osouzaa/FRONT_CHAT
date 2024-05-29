@@ -149,7 +149,7 @@ const ChatBot: React.FC = () => {
     new Promise((resolve) => setTimeout(resolve, ms));
 
   return (
-    <C.Container className={!openChat ? "closeChat" : ""}>
+    <C.Container className={!openChat ? "" : "closeChat"}>
       <C.HeaderChat>
         <img
           src={Robo}

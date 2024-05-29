@@ -5,9 +5,19 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import { TextField, InputAdornment, Button } from "@mui/material";
 import { ChatBot } from "../../Chat";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export const CarPage = () => {
   const navigate = useNavigate();
+  const [showChat, setShowChat] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowChat(true);
+    }, 3000);
+    return () => clearTimeout(timer); // Limpa o temporizador quando o componente é desmontado
+  }, []);
+
   return (
     <>
       <C.Header>
@@ -40,7 +50,7 @@ export const CarPage = () => {
           <C.ContentForm>
             <C.TextP> Tem interesse? </C.TextP>
             <C.SpanText>
-              Envie uma mensagem{" "}
+              Envie uma mensagem
               <EmailIcon sx={{ color: "#b10509", fontSize: "16px" }} />
             </C.SpanText>
             <TextField
@@ -92,7 +102,7 @@ export const CarPage = () => {
           </C.ContentForm>
         </C.ContainerTwo>
       </C.Container>
-      <ChatBot />
+      {showChat && <ChatBot />}
     </>
   );
 };
