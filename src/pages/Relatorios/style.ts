@@ -33,7 +33,7 @@ export const ImageRobo = styled.img`
     bottom: 0;
 
     @media (max-width: 1350px) {
-      width: 250px;
+      width: 200px;
     }
     @media (max-width: 550px) {
       width: 100px;

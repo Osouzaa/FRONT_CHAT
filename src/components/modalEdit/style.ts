@@ -20,12 +20,21 @@ export const ContainerModal = styled.div`
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1350px) {
+    max-height: 85vh;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 100%;
+    max-height: 100vh;
+  }
 `;
 
 export const Header = styled.header`
   background-color: #9d18e1;
   width: 100%;
-  height: 5rem;
+  height: 5.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,4 +103,3 @@ export const ContentButton = styled.div`
     }
   }
 `;
-

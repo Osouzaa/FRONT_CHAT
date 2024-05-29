@@ -31,7 +31,7 @@ interface Cliente {
 const Relatorios = () => {
   const [clientes, setClientes] = useState<Cliente[]>([]);
   const navigate = useNavigate();
-  const [showEdit, setShowEdit] = useState<boolean>(false);
+  const [showEdit, setShowEdit] = useState<boolean>(true);
   const [clientID, setClientID] = useState<number | undefined>();
 
   const fetchData = useCallback(async () => {
